@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">TicTacToe Mini</string>
+
+
+    <string name="player1nameHint">player1 name</string>
+    <string name="player2nameHint">player2 name</string>
+    <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_afterstart">Tic Tac Toe</string>
+    <string name="banner_ad">ca-app-pub-1300550419393935/5614670900</string>
+    <string name="interstitial_ad">ca-app-pub-1300550419393935/9255630491</string>
+    <string name="native_ad">ca-app-pub-1300550419393935/6127259493</string>
+    <string name="feedback">vickystft@gmail.com</string>
+
+</resources>

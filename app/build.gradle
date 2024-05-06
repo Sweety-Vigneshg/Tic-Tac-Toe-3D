@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 34
+    buildToolsVersion '33.0.2'
+    defaultConfig {
+        applicationId "com.vickystft.tictactoegames"
+        minSdkVersion 21
+        //noinspection EditedTargetSdkVersion
+        targetSdk 34
+        versionCode 6
+        versionName '4.6.1.2'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    ndkVersion '25.2.9519653'
+    namespace 'com.vickystft.tictactoegames'
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    constraints{
+        implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.10'
+        implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+    }
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.0-alpha03'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    //noinspection RiskyLibrary
+    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+
+}
